@@ -215,6 +215,50 @@ body {
   margin-right: 6rem;
 }
 
+.footer {
+  padding: 8rem;
+  background: #333;
+}
+.footer__logo {
+  width: 12rem;
+}
+.footer__list {
+  list-style: none;
+  text-align: center;
+}
+.footer__item {
+  display: inline-block;
+}
+.footer__item:not(:last-child) {
+  margin-right: 5rem;
+}
+.footer__link:link, .footer__link:visited {
+  color: #777;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: #font-size-paragraph;
+  letter-spacing: 0.2rem;
+  font-weight: 300;
+  display: inline-block;
+  transition: 0.2s all;
+}
+.footer__link:hover {
+  transform: rotate(5deg) scale(1.2);
+  color: #ba8554;
+  text-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+}
+
+.navigation__background {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  background: radial-gradient(#ba8554, #a14f03);
+  position: fixed;
+}
+.navigation__link {
+  text-decoration: none;
+}
+
 .section-about {
   padding-top: 8rem;
   margin-bottom: 20rem;
