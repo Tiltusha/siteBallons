@@ -7,6 +7,8 @@
         border-radius: 5rem
         transition: all .3s
         position: relative
+        @include respond(tab-port)
+            padding: 2rem 5rem
     &:hover
         transform: translateY(-.4rem)
         box-shadow: $box-shadow
