@@ -59,6 +59,8 @@ body
     backface-visibility: hidden
     @include respond(tab-land)
         font-size: 3rem
+    @include respond(tab-port)
+        letter-spacing: .5rem
     &:hover
         transform: skewY(2deg) skewX(15deg) scale(1.1)
         text-shadow: $shadow-h2

@@ -5,8 +5,12 @@
     margin: 0 auto
     padding: 6rem
     transform: skewX(330deg)
+    @include respond(tab-port)
+        transform: skewX(350deg)
     & > *
         transform: skewX(-330deg)
+        @include respond(tab-port)
+            transform: skewX(-350deg)
     &__img
         width: 15rem
         height: 15rem
