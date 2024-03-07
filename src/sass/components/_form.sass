@@ -4,11 +4,15 @@
     box-shadow: $box-shadow
     border-radius: .5rem
     overflow: hidden
+    @include respond(tab-port)
+        background: linear-gradient(110deg, rgba(255,255,255,0.9), rgba(255,255,255,0.9) 550%, rgba(195,149,106,0.2) 55.1%, rgba(195,149,106,0.2)), url('../img/form.jpg') no-repeat top center / cover
 
 .form
     width: 70%
     padding-top: 5rem
     padding-left: 5rem
+    @include respond(tab-port)
+        width: 100%
     &__group:not(:last-child)
         margin-bottom: 2rem
     &__group:nth-child(4)
@@ -36,6 +40,9 @@
             box-shadow: $box-shadow
         &:focus:invalid
             border-bottom: .3rem solid #D76363
+        @include respond(tab-port)
+            width: 90%
+            box-shadow: $box-shadow
     
     &__label
         font-size: $font-size-paragraph
@@ -45,7 +52,7 @@
         margin-top: 1rem
         margin-left: 1.5rem
         transition: .7s all
-       
+        
     &__input:placeholder-shown + &__label
         opacity: 0
         visibility: none
